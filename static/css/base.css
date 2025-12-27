@@ -1,0 +1,245 @@
+/* ==========================================
+   BASE STYLES - webchat/static/css/base.css
+   ========================================== */
+
+:root {
+    --primary-color: #0084ff;
+    --secondary-color: #f0f2f5;
+    --dark-bg: #1c1e21;
+    --message-sent: #0084ff;
+    --message-received: #3a3b3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--dark-bg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    color: #e4e6eb;
+}
+
+/* ==========================================
+   NAVBAR STYLES
+   ========================================== */
+
+.navbar {
+    background: #242526 !important;
+    border-bottom: 1px solid #3a3b3c;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.navbar-brand:hover {
+    color: #0073e6 !important;
+}
+
+/* ==========================================
+   FORM CONTROLS
+   ========================================== */
+
+.form-control {
+    background: #3a3b3c !important;
+    border: 1px solid #4a4b4c !important;
+    color: white !important;
+    padding: 12px 16px;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    background: #4a4b4c !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 132, 255, 0.25) !important;
+}
+
+.form-control::placeholder {
+    color: #8e8e93 !important;
+}
+
+/* ==========================================
+   BUTTONS
+   ========================================== */
+
+.btn-primary {
+    background: var(--primary-color);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #0073e6;
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-outline-secondary {
+    border-color: #6c757d;
+    color: #8e8e93;
+}
+
+.btn-outline-secondary:hover {
+    background: #6c757d;
+    color: white;
+}
+
+/* ==========================================
+   AUTH PAGES
+   ========================================== */
+
+.auth-container {
+    min-height: calc(100vh - 56px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auth-card {
+    background: #242526;
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.auth-card .form-label {
+    color: #e4e6eb;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.auth-card h2 {
+    color: #e4e6eb;
+}
+
+.auth-card .text-muted {
+    color: #8e8e93 !important;
+}
+
+/* ==========================================
+   SEARCH
+   ========================================== */
+
+.search-input {
+    background: #3a3b3c !important;
+    border: 1px solid #4a4b4c !important;
+    color: white !important;
+}
+
+.search-input:focus {
+    background: #4a4b4c !important;
+    box-shadow: none !important;
+}
+
+/* ==========================================
+   CARDS
+   ========================================== */
+
+.card {
+    background: #242526;
+    border: 1px solid #3a3b3c;
+    border-radius: 8px;
+}
+
+.card-body {
+    color: #e4e6eb;
+}
+
+/* ==========================================
+   SCROLLBAR
+   ========================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1c1e21;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a4b4c;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5a5b5c;
+}
+
+/* ==========================================
+   ALERTS
+   ========================================== */
+
+.alert {
+    border-radius: 8px;
+}
+
+.alert-danger {
+    background: rgba(220, 53, 69, 0.2);
+    border-color: #dc3545;
+    color: #ff6b6b;
+}
+
+.alert-success {
+    background: rgba(40, 167, 69, 0.2);
+    border-color: #28a745;
+    color: #51cf66;
+}
+
+/* ==========================================
+   DROPDOWN
+   ========================================== */
+
+.dropdown-menu {
+    background: #242526;
+    border: 1px solid #3a3b3c;
+}
+
+.dropdown-item {
+    color: #e4e6eb;
+}
+
+.dropdown-item:hover {
+    background: #3a3b3c;
+    color: white;
+}
+
+/* ==========================================
+   UTILITIES
+   ========================================== */
+
+.text-muted {
+    color: #8e8e93 !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #3a3b3c !important;
+}
+
+.border-top {
+    border-top: 1px solid #3a3b3c !important;
+}
+
+.border-end {
+    border-right: 1px solid #3a3b3c !important;
+}
